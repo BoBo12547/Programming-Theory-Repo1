@@ -12,8 +12,9 @@ public class Animal : MonoBehaviour
     bool isJumped;
     float bounds = 14f;
     float m_jump = 5f;
-    
-    
+    float m_speed = 4f;
+
+    // ENCAPSULATION
     protected float jump
     {
         get { return m_jump; }
@@ -32,7 +33,7 @@ public class Animal : MonoBehaviour
 
     }
 
-    float m_speed = 4f;
+    // ENCAPSULATION
     protected float speed { get { return m_speed; }
 
          set
@@ -59,7 +60,7 @@ public class Animal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // ABSTRACTION
         TalkIfClicked();
         RandomWalk();
         RandomJump();
@@ -93,7 +94,8 @@ public class Animal : MonoBehaviour
 
     protected void RandomWalk()
     {
-            Passed2Sec();
+        // ABSTRACTION
+        Passed2Sec();
             
             if (IsOutOfBounds())
             {
@@ -116,6 +118,7 @@ public class Animal : MonoBehaviour
 
     protected void RandomJump()
     {
+        // ABSTRACTION
         Jump();
         Passed2Sec();
         

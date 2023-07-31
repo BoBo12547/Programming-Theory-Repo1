@@ -12,9 +12,9 @@ public class Cat : Animal
         animalRb = GetComponent<Rigidbody>();
     }
 
-    
 
-    
+
+    // POLYMORPHISM
     protected override void Talk()
     {
         Debug.Log("Im a cat");

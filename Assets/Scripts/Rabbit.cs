@@ -11,10 +11,10 @@ public class Rabbit : Animal
         jump = 8f;
         animalRb = GetComponent<Rigidbody>();
     }
-    
 
 
 
+    // POLYMORPHISM
     protected override void Talk()
     {
         Debug.Log("Im a rabbit");
